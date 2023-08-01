@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/check_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cappuccino"
+        app:layout_constraintBottom_toBottomOf="@id/check_coffee"
+        app:layout_constraintStart_toEndOf="@id/check_coffee"
+        app:layout_constraintTop_toTopOf="@id/check_coffee" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/cappuccino"
+        app:layout_constraintBottom_toBottomOf="@id/edit_amount_coffee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_amount_coffee" />
+
+    <TextView
+        android:id="@+id/text_amount_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/amount_cappuccino"
+        app:layout_constraintBottom_toBottomOf="@id/text_price_coffee"
+        app:layout_constraintStart_toEndOf="@id/text_price_coffee"
+        app:layout_constraintTop_toTopOf="@id/text_price_coffee" />
+
+    <EditText
+        android:id="@+id/edit_amount_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:minWidth="30dp"
+        android:text="@string/cappuccino_value"
+        app:layout_constraintBottom_toBottomOf="@id/text_amount_coffee"
+        app:layout_constraintStart_toEndOf="@id/text_amount_coffee"
+        app:layout_constraintTop_toTopOf="@id/text_amount_coffee" />
+
+    <TextView
+        android:id="@+id/text_price_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/cappuccino_price"
+        app:layout_constraintBottom_toBottomOf="@id/text_coffee"
+        app:layout_constraintStart_toEndOf="@id/text_coffee"
+        app:layout_constraintTop_toTopOf="@id/text_coffee" />
+
+
+    <CheckBox
+        android:id="@+id/check_brownie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_coffee" />
+
+    <TextView
+        android:id="@+id/text_brownie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brownie"
+        app:layout_constraintBottom_toBottomOf="@id/check_brownie"
+        app:layout_constraintStart_toEndOf="@id/check_brownie"
+        app:layout_constraintTop_toTopOf="@id/check_brownie" />
+
+    <TextView
+        android:id="@+id/text_price_brownie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brownie_price"
+        app:layout_constraintBottom_toBottomOf="@id/text_brownie"
+        app:layout_constraintStart_toStartOf="@id/text_price_coffee"
+        app:layout_constraintTop_toTopOf="@id/text_brownie" />
+
+    <TextView
+        android:id="@+id/text_amount_brownie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_brownie"
+        app:layout_constraintBottom_toBottomOf="@id/text_price_brownie"
+        app:layout_constraintStart_toStartOf="@id/text_amount_coffee"
+        app:layout_constraintTop_toTopOf="@id/text_price_brownie" />
+
+    <EditText
+        android:id="@+id/edit_amount_brownie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"
+        android:minWidth="30dp"
+        android:text="@string/brownie_value"
+        app:layout_constraintBottom_toBottomOf="@id/text_amount_brownie"
+        app:layout_constraintStart_toStartOf="@id/edit_amount_coffee"
+        app:layout_constraintTop_toTopOf="@id/text_amount_brownie" />
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/brownie"
+        app:layout_constraintBottom_toBottomOf="@id/edit_amount_brownie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_amount_brownie" />
+
+
+    <CheckBox
+        android:id="@+id/check_croissant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_brownie" />
+
+    <TextView
+        android:id="@+id/text_croissant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/croissant"
+        app:layout_constraintBottom_toBottomOf="@id/check_croissant"
+        app:layout_constraintStart_toEndOf="@id/check_croissant"
+        app:layout_constraintTop_toTopOf="@id/check_croissant" />
+
+    <TextView
+        android:id="@+id/text_price_croissant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/croissant_price"
+        app:layout_constraintBottom_toBottomOf="@id/text_croissant"
+        app:layout_constraintStart_toStartOf="@id/text_price_brownie"
+        app:layout_constraintTop_toTopOf="@id/text_croissant" />
+
+    <TextView
+        android:id="@+id/text_amount_croissant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_croissant"
+        app:layout_constraintBottom_toBottomOf="@id/text_price_croissant"
+        app:layout_constraintStart_toStartOf="@id/text_amount_brownie"
+        app:layout_constraintTop_toTopOf="@id/text_price_croissant" />
+
+    <EditText
+        android:id="@+id/edit_amount_croissant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"
+        android:minWidth="30dp"
+        android:text="@string/croissant_value"
+        app:layout_constraintBottom_toBottomOf="@id/text_amount_croissant"
+        app:layout_constraintStart_toStartOf="@id/edit_amount_brownie"
+        app:layout_constraintTop_toTopOf="@id/text_amount_croissant" />
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/cheesecroissant"
+        app:layout_constraintBottom_toBottomOf="@id/edit_amount_croissant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_amount_croissant" />
+
+
+    <CheckBox
+        android:id="@+id/check_cake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_croissant" />
+
+    <TextView
+        android:id="@+id/text_cake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cake"
+        app:layout_constraintBottom_toBottomOf="@id/check_cake"
+        app:layout_constraintStart_toEndOf="@id/check_cake"
+        app:layout_constraintTop_toTopOf="@id/check_cake" />
+
+    <TextView
+        android:id="@+id/text_price_cake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cake_price"
+        app:layout_constraintBottom_toBottomOf="@id/text_cake"
+        app:layout_constraintStart_toStartOf="@id/text_price_croissant"
+        app:layout_constraintTop_toTopOf="@id/text_cake" />
+
+    <TextView
+        android:id="@+id/text_amount_cake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_cake"
+        app:layout_constraintBottom_toBottomOf="@id/text_price_cake"
+        app:layout_constraintStart_toStartOf="@id/text_amount_croissant"
+        app:layout_constraintTop_toTopOf="@id/text_price_cake" />
+
+    <EditText
+        android:id="@+id/edit_amount_cake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"
+        android:minWidth="30dp"
+        android:text="@string/cake_value"
+        app:layout_constraintBottom_toBottomOf="@id/text_amount_cake"
+        app:layout_constraintStart_toStartOf="@id/edit_amount_croissant"
+        app:layout_constraintTop_toTopOf="@id/text_amount_cake" />
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/chocolatecake"
+        app:layout_constraintBottom_toBottomOf="@id/edit_amount_cake"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_amount_cake" />
+
+
+    <CheckBox
+        android:id="@+id/check_waffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_cake" />
+
+    <TextView
+        android:id="@+id/text_waffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/waffle"
+        app:layout_constraintBottom_toBottomOf="@id/check_waffle"
+        app:layout_constraintStart_toEndOf="@id/check_waffle"
+        app:layout_constraintTop_toTopOf="@id/check_waffle" />
+
+    <TextView
+        android:id="@+id/text_price_waffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/waffle_price"
+        app:layout_constraintBottom_toBottomOf="@id/text_waffle"
+        app:layout_constraintStart_toStartOf="@id/text_price_cake"
+        app:layout_constraintTop_toTopOf="@id/text_waffle" />
+
+    <TextView
+        android:id="@+id/text_amount_waffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_waffle"
+        app:layout_constraintBottom_toBottomOf="@id/text_price_waffle"
+        app:layout_constraintStart_toStartOf="@id/text_amount_cake"
+        app:layout_constraintTop_toTopOf="@id/text_price_waffle" />
+
+    <EditText
+        android:id="@+id/edit_amount_waffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"
+        android:minWidth="30dp"
+        android:text="@string/waffle_value"
+        app:layout_constraintBottom_toBottomOf="@id/text_amount_waffle"
+        app:layout_constraintStart_toStartOf="@id/edit_amount_cake"
+        app:layout_constraintTop_toTopOf="@id/text_amount_waffle" />
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/chocolatewaffle"
+        app:layout_constraintBottom_toBottomOf="@id/edit_amount_waffle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_amount_waffle" />
+
+
+    <CheckBox
+        android:id="@+id/check_milkshake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_waffle" />
+
+    <TextView
+        android:id="@+id/text_milkshake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/milkshake"
+        app:layout_constraintBottom_toBottomOf="@id/check_milkshake"
+        app:layout_constraintStart_toEndOf="@id/check_milkshake"
+        app:layout_constraintTop_toTopOf="@id/check_milkshake" />
+
+    <TextView
+        android:id="@+id/text_price_milkshake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/milkshake_price"
+        app:layout_constraintBottom_toBottomOf="@id/text_milkshake"
+        app:layout_constraintStart_toStartOf="@id/text_price_waffle"
+        app:layout_constraintTop_toTopOf="@id/text_milkshake" />
+
+    <TextView
+        android:id="@+id/text_amount_milkshake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_milkshake"
+        app:layout_constraintBottom_toBottomOf="@id/text_price_milkshake"
+        app:layout_constraintStart_toStartOf="@id/text_amount_waffle"
+        app:layout_constraintTop_toTopOf="@id/text_price_milkshake" />
+
+    <EditText
+        android:id="@+id/edit_amount_milkshake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"
+        android:minWidth="30dp"
+        android:text="@string/milkshake_value"
+        app:layout_constraintBottom_toBottomOf="@id/text_amount_milkshake"
+        app:layout_constraintStart_toStartOf="@id/edit_amount_waffle"
+        app:layout_constraintTop_toTopOf="@id/text_amount_milkshake" />
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/milkshake"
+        app:layout_constraintBottom_toBottomOf="@id/edit_amount_milkshake"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_amount_milkshake" />
+
+
+    <CheckBox
+        android:id="@+id/check_tea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_milkshake" />
+
+    <TextView
+        android:id="@+id/text_tea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tea"
+        app:layout_constraintBottom_toBottomOf="@id/check_tea"
+        app:layout_constraintStart_toEndOf="@id/check_tea"
+        app:layout_constraintTop_toTopOf="@id/check_tea" />
+
+    <TextView
+        android:id="@+id/text_price_tea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_tea"
+        app:layout_constraintBottom_toBottomOf="@id/text_tea"
+        app:layout_constraintStart_toStartOf="@id/text_price_milkshake"
+        app:layout_constraintTop_toTopOf="@id/text_tea" />
+
+    <TextView
+        android:id="@+id/text_amount_tea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_tea"
+        app:layout_constraintBottom_toBottomOf="@id/text_price_tea"
+        app:layout_constraintStart_toStartOf="@id/text_amount_milkshake"
+        app:layout_constraintTop_toTopOf="@id/text_price_tea" />
+
+    <EditText
+        android:id="@+id/edit_amount_tea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"
+        android:minWidth="30dp"
+        android:text="@string/tea_value"
+        app:layout_constraintBottom_toBottomOf="@id/text_amount_tea"
+        app:layout_constraintStart_toStartOf="@id/edit_amount_milkshake"
+        app:layout_constraintTop_toTopOf="@id/text_amount_tea" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/tea"
+        app:layout_constraintBottom_toBottomOf="@id/edit_amount_tea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_amount_tea" />
+
+
+    <CheckBox
+        android:id="@+id/check_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_tea" />
+
+    <TextView
+        android:id="@+id/text_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/water"
+        app:layout_constraintBottom_toBottomOf="@id/check_water"
+        app:layout_constraintStart_toEndOf="@id/check_water"
+        app:layout_constraintTop_toTopOf="@id/check_water" />
+
+    <TextView
+        android:id="@+id/text_price_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_water"
+        app:layout_constraintBottom_toBottomOf="@id/text_water"
+        app:layout_constraintStart_toStartOf="@id/text_price_tea"
+        app:layout_constraintTop_toTopOf="@id/text_water" />
+
+    <TextView
+        android:id="@+id/text_amount_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_water"
+        app:layout_constraintBottom_toBottomOf="@id/text_price_water"
+        app:layout_constraintStart_toStartOf="@id/text_amount_tea"
+        app:layout_constraintTop_toTopOf="@id/text_price_water" />
+
+    <EditText
+        android:id="@+id/edit_amount_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"
+        android:minWidth="30dp"
+        android:text="@string/water_value"
+        app:layout_constraintBottom_toBottomOf="@id/text_amount_water"
+        app:layout_constraintStart_toStartOf="@id/edit_amount_tea"
+        app:layout_constraintTop_toTopOf="@id/text_amount_water" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/water"
+        app:layout_constraintBottom_toBottomOf="@id/edit_amount_water"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_amount_water" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="@string/order"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:backgroundTint="#03A9F4"
+        app:layout_constraintTop_toBottomOf="@id/text_amount_water"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

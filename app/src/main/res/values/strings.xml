@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MenuCoffee</string>
+    <string name="cappuccino">Cappuccino</string>
+    <string name="water_value">0</string>
+    <string name="amount_water">Amount:</string>
+    <string name="price_water">1.5$</string>
+    <string name="water">Water</string>
+    <string name="tea_value">0</string>
+    <string name="amount_tea">Amount:</string>
+    <string name="price_tea">2$</string>
+    <string name="tea">Tea</string>
+    <string name="milkshake_value">0</string>
+    <string name="amount_milkshake">Amount:</string>
+    <string name="milkshake_price">3.5$</string>
+    <string name="milkshake">Milkshake</string>
+    <string name="waffle_value">0</string>
+    <string name="amount_waffle">Amount:</string>
+    <string name="waffle_price">4$</string>
+    <string name="waffle">Waffle</string>
+    <string name="cake_value">0</string>
+    <string name="amount_cake">Amount:</string>
+    <string name="cake_price">3.5$</string>
+    <string name="cake">Cake</string>
+    <string name="croissant_value">0</string>
+    <string name="amount_croissant">Amount:</string>
+    <string name="croissant_price">3$</string>
+    <string name="croissant">Croissant</string>
+    <string name="brownie_value">0</string>
+    <string name="amount_brownie">Amount:</string>
+    <string name="brownie_price">4$</string>
+    <string name="brownie">Brownie</string>
+    <string name="cappuccino_price">2.5$</string>
+    <string name="cappuccino_value">0</string>
+    <string name="amount_cappuccino">Amount:</string>
+    <string name="order">Order</string>
+</resources>
