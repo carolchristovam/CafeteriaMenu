@@ -33,4 +33,5 @@
     <string name="cappuccino_value">0</string>
     <string name="amount_cappuccino">Amount:</string>
     <string name="order">Order</string>
+    <string name="order_summary">Order Summary</string>
 </resources>

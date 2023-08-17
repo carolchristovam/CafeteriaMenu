@@ -6,4 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".OrdersActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_summary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/text_summary"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"/>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:elevation="3dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/text_summary"
+        app:layout_constraintEnd_toEndOf="@id/text_summary"
+        app:layout_constraintTop_toBottomOf="@id/text_summary"
+        android:background="@color/blue_app"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
