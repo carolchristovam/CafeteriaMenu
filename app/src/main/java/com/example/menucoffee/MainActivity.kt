@@ -49,4 +49,60 @@ class MainActivity : AppCompatActivity() {
             binding.editAmountBrownie.setText("0")
         }
     }
+
+    private fun orderCake () {
+        if(binding.checkCake.isChecked()){
+            binding.editAmountCake.setText("1")
+        }else{
+            binding.editAmountCake.setText("0")
+        }
+    }
+
+    private fun orderCoffee () {
+        if(binding.checkCoffee.isChecked()){
+            binding.editAmountCoffee.setText("1")
+        }else{
+            binding.editAmountCoffee.setText("0")
+        }
+    }
+
+    private fun orderTea () {
+        if(binding.checkTea.isChecked()){
+            binding.editAmountTea.setText("1")
+        }else{
+            binding.editAmountTea.setText("0")
+        }
+    }
+
+    private fun orderCroissant () {
+        if(binding.checkCroissant.isChecked()){
+            binding.editAmountCroissant.setText("1")
+        }else{
+            binding.editAmountCroissant.setText("0")
+        }
+    }
+
+    private fun orderWaffle () {
+        if(binding.checkWaffle.isChecked()){
+            binding.editAmountWaffle.setText("1")
+        }else{
+            binding.editAmountWaffle.setText("0")
+        }
+    }
+
+    private fun orderMilkshake () {
+        if(binding.checkMilkshake.isChecked()){
+            binding.editAmountMilkshake.setText("1")
+        }else{
+            binding.editAmountMilkshake.setText("0")
+        }
+    }
+
+    private fun orderWater () {
+        if(binding.checkWater.isChecked()){
+            binding.editAmountWater.setText("1")
+        }else{
+            binding.editAmountWater.setText("0")
+        }
+    }
 }
